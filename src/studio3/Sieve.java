@@ -19,6 +19,9 @@ public class Sieve {
 			if (numbers[i] % 2 == 0 || numbers[i] % 3 == 0 || numbers[i] % 5 == 0 || numbers[i] % 7 == 0 ) {
 				isPrime = false;
 			}
+			if(numbers[i] == 2 || numbers[i] == 3 || numbers[i] == 5 || numbers [i] == 7) {
+				isPrime = true;
+			}
 			if (isPrime) {
 				System.out.println(numbers[i] + " is a prime number!");
 			}
